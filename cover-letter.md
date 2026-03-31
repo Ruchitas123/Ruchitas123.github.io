@@ -1,9 +1,17 @@
-# Cover letter
+# Cover letter — Ruchita Srivastav
 
-**Ruchita Srivastav**  
-Senior Technical Writer · [ruchita.srivastav@gmail.com](mailto:ruchita.srivastav@gmail.com) · [LinkedIn](https://www.linkedin.com/in/ruchita-srivastav-257230ab/)
+**Senior Technical Writer · 8+ years**
+
+| | |
+|:---|:---|
+| **Phone:** | *9654471661* |
+| **Email:** | *[ruchita.srivastav@gmail.com](mailto:ruchita.srivastav@gmail.com)* |
+| **LinkedIn:** | *[Profile](https://www.linkedin.com/in/ruchita-srivastav-257230ab/)* |
+| **GitHub:** | *[github.com/Ruchitas123](https://github.com/Ruchitas123)* |
 
 ---
+
+*For a styled version, open [cover-letter.html](cover-letter.html) on this site.*
 
 Dear Hiring Manager,
 
@@ -13,5 +21,5 @@ My work emphasizes end-to-end API and product documentation, information archite
 
 I would welcome a conversation about how my skills can support your team. Thank you for your time and consideration.
 
-Sincerely,  
-Ruchita Srivastav
+*Sincerely,*  
+***Ruchita Srivastav***
