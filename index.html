@@ -263,6 +263,13 @@
       border-radius: 4px;
     }
 
+    .card__meta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-shrink: 0;
+    }
+
     footer {
       margin-top: 3.5rem;
       padding-top: 2rem;
@@ -337,11 +344,14 @@
       <a class="card card--fork" href="https://github.com/Ruchitas123/aem-core-forms-components" target="_blank" rel="noopener noreferrer">
         <div class="card__banner" aria-hidden="true"></div>
         <div class="card__top">
-          <h3 class="card__name">custom-component</h3>
-          <span class="fork-tag">Fork</span>
+          <h3 class="card__name">Star Component</h3>
+          <div class="card__meta">
+            <span class="card__lang">AEM</span>
+            <span class="fork-tag">Fork</span>
+          </div>
         </div>
         <p class="card__desc">
-          Fork of Adobe’s AEM Core Forms Components—a practical reference for how AEM custom components are structured and extended: authoring dialogs, HTL, client-side scripts, and the same extension ideas Adobe describes for Core Components (overlays, customization points, design vs. edit dialog). Helpful when tailoring forms experiences or writing docs that match real component code (Apache-2.0 upstream).
+          Star Component is my AEM custom-component reference—a lean fork of Core Forms for studying dialogs, HTL, and how components extend Adobe’s patterns (Apache-2.0 upstream).
         </p>
         <span class="card__link">Open repository →</span>
       </a>
