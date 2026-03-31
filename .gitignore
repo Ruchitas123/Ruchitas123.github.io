@@ -1,4 +1,6 @@
 .DS_Store
+.vendor_fpdf/
+
 # Optional local exports (site uses resume.pdf in repo)
 Ruchita Srivastav.pdf
 Ruchita Srivastav-coverletter.pdf

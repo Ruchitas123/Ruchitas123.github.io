@@ -51,6 +51,8 @@
 
     .toolbar a:hover { text-decoration: underline; }
 
+    .toolbar .sep { color: var(--border); user-select: none; }
+
     .letter {
       background: var(--paper);
       border-radius: 16px;
@@ -152,6 +154,8 @@
   <div class="page">
     <nav class="toolbar" aria-label="Document actions">
       <a href="index.html">← Back</a>
+      <span class="sep" aria-hidden="true">|</span>
+      <a href="cover-letter.pdf" target="_blank" rel="noopener noreferrer">Download PDF</a>
     </nav>
 
     <article class="letter">
