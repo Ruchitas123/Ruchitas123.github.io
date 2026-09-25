@@ -3,8 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ruchita Srivastav — Technical Writer &amp; Projects</title>
-  <meta name="description" content="Ruchita Srivastav — Senior Technical Writer, 8+ years: API and enterprise documentation, SEO, docs-as-code, automation, and public GitHub samples." />
+  <title>Ruchita Srivastav — Senior Technical Writer</title>
+  <meta name="description" content="Ruchita Srivastav — Senior Technical Writer at Keysight Technologies (Ex-Adobe). EDA documentation, API docs, UX writing, SEO, docs-as-code, and GenAI workflows." />
+  <meta property="og:title" content="Ruchita Srivastav — Senior Technical Writer" />
+  <meta property="og:description" content="EDA documentation, API and developer docs, UX writing, SEO, and GenAI-powered content workflows." />
+  <meta property="og:image" content="professional-pic.webp" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&display=swap" rel="stylesheet" />
@@ -15,17 +18,13 @@
       --cream: #faf7f2;
       --paper: #ffffff;
       --accent: #c45c3e;
-      --accent-soft: #e8a090;
       --teal: #1a6b6b;
-      --teal-soft: #2d9494;
       --card-border: rgba(15, 20, 25, 0.08);
       --shadow: 0 18px 50px rgba(15, 20, 25, 0.08);
       --radius: 14px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -42,14 +41,11 @@
       padding: 0 1.25rem 4rem;
     }
 
-    .hero .wrap {
-      padding-bottom: 1.25rem;
-    }
+    .hero .wrap { padding-bottom: 1.5rem; }
 
-    /* Hero */
     .hero {
       position: relative;
-      padding: 2rem 0 1.25rem;
+      padding: 2rem 0 1.5rem;
       overflow: hidden;
     }
 
@@ -69,6 +65,35 @@
       align-items: center;
     }
 
+    @media (min-width: 800px) {
+      .hero__grid {
+        grid-template-columns: minmax(0, 1fr) 280px;
+        gap: 2.5rem;
+      }
+    }
+
+    .hero__photo {
+      justify-self: center;
+    }
+
+    .hero__photo img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      object-position: center 18%;
+      border-radius: 50%;
+      border: 4px solid var(--paper);
+      box-shadow: var(--shadow);
+      display: block;
+    }
+
+    @media (min-width: 800px) {
+      .hero__photo img {
+        width: 260px;
+        height: 260px;
+      }
+    }
+
     .hero__badge {
       display: inline-flex;
       align-items: center;
@@ -81,24 +106,19 @@
       margin-bottom: 1rem;
     }
 
-    .hero__badge svg {
-      opacity: 0.85;
-    }
-
     h1 {
       font-family: "Fraunces", Georgia, serif;
       font-size: clamp(2.25rem, 5vw, 3.25rem);
       font-weight: 600;
       line-height: 1.12;
       margin: 0 0 0.5rem;
-      color: var(--ink);
     }
 
     .hero__role {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       color: var(--accent);
       font-weight: 600;
-      margin: 0 0 1.25rem;
+      margin: 0 0 1.15rem;
     }
 
     .hero__lead {
@@ -108,13 +128,8 @@
       margin: 0 0 1rem;
     }
 
-    .hero__lead p {
-      margin: 0 0 0.85rem;
-    }
-
-    .hero__lead p:last-child {
-      margin-bottom: 0;
-    }
+    .hero__lead p { margin: 0 0 0.85rem; }
+    .hero__lead p:last-child { margin-bottom: 0; }
 
     .hero__links {
       display: flex;
@@ -135,9 +150,7 @@
       transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
 
-    .hero__link:hover {
-      transform: translateY(-1px);
-    }
+    .hero__link:hover { transform: translateY(-1px); }
 
     .hero__link--primary {
       background: var(--ink);
@@ -152,37 +165,92 @@
       box-shadow: 0 2px 10px rgba(15, 20, 25, 0.06);
     }
 
-    /* Section */
     .section-title {
       font-family: "Fraunces", Georgia, serif;
       font-size: 1.75rem;
       font-weight: 600;
-      margin: 0 0 0.35rem;
+      margin: 2.75rem 0 0.35rem;
     }
+
+    .section-title:first-child { margin-top: 0; }
 
     .section-sub {
       color: var(--muted);
-      margin: 0 0 2rem;
+      margin: 0 0 1.75rem;
       max-width: 42rem;
     }
 
-    /* Repo grid */
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .chip {
+      background: var(--paper);
+      border: 1px solid var(--card-border);
+      border-radius: 999px;
+      padding: 0.35rem 0.8rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .timeline {
+      display: grid;
+      gap: 1.1rem;
+    }
+
+    .job {
+      background: var(--paper);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 1.2rem 1.35rem;
+    }
+
+    .job__top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.35rem 1rem;
+      margin-bottom: 0.45rem;
+    }
+
+    .job__role {
+      font-weight: 700;
+      margin: 0;
+      font-size: 1.05rem;
+    }
+
+    .job__dates {
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .job__company {
+      color: var(--teal);
+      font-weight: 600;
+      margin: 0 0 0.55rem;
+      font-size: 0.95rem;
+    }
+
+    .job ul {
+      margin: 0;
+      padding-left: 1.15rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .job li { margin: 0.3rem 0; }
+
     .repos {
       display: grid;
       gap: 1.25rem;
     }
 
     @media (min-width: 640px) {
-      .repos {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (min-width: 960px) {
-      .repos {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-      }
+      .repos { grid-template-columns: repeat(2, 1fr); }
     }
 
     .card {
@@ -229,7 +297,6 @@
       font-weight: 700;
       font-size: 1.05rem;
       margin: 0;
-      color: var(--ink);
     }
 
     .card__lang {
@@ -255,9 +322,6 @@
       font-size: 0.85rem;
       font-weight: 600;
       color: var(--teal);
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
     }
 
     .fork-tag {
@@ -292,15 +356,7 @@
       font-weight: 600;
     }
 
-    .footer__queries {
-      margin: 0;
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-
-    .footer__queries a {
-      font-weight: 600;
-    }
+    .footer__queries { margin: 0; }
   </style>
 </head>
 <body>
@@ -308,39 +364,100 @@
     <div class="hero__bg" aria-hidden="true"></div>
     <div class="wrap hero__grid">
       <div>
-        <p class="hero__badge">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-          </svg>
-          Open source &amp; docs
-        </p>
+        <p class="hero__badge">Keysight Technologies · Ex-Adobe</p>
         <h1>Ruchita Srivastav</h1>
-        <p class="hero__role">Senior Technical Writer · 8+ years</p>
+        <p class="hero__role">Senior Technical Writer · EDA, API docs, UX writing &amp; GenAI</p>
         <div class="hero__lead">
           <p>
-            I turn complex products into clear guides, API references, and enterprise documentation. Over eight-plus years I have owned the full content lifecycle—drafting, HTML and structured authoring, editorial review, metadata, and publishing—so technical audiences get accurate, findable, developer-friendly narratives.
+            Senior Technical Writer with 8+ years crafting developer documentation, UX microcopy, and SEO-optimized content for enterprise software. I currently document Electronic Design Automation (EDA) products at Keysight Technologies—RF and microwave circuit simulation, electromagnetic analysis, and design automation for hardware engineering audiences.
           </p>
           <p>
-            My work centers on end-to-end API and product documentation, reference material for forms and communications APIs, SEO and information architecture across large doc sets, and automating PDF and web publishing with FrameMaker Publishing Server, GitHub Actions, and docs-as-code workflows. I collaborate closely with engineering, product, localization, and multimedia stakeholders and use AI-assisted authoring tools where they improve quality and delivery.
-          </p>
-          <p>
-            Earlier experience includes enterprise-scale platforms—software requirements, data-flow documentation, operational guides—and structured technical books and tutorials for developers. Employers, titles, and timelines are on my resume; the repositories below are public samples you can open for code and context.
+            At Adobe I owned API and product documentation, docs-as-code publishing, and GenAI-assisted content pipelines. I build AI agents and agent skills for SEO, content rephrasing, and Jira, wiki, and Git integration so documentation work moves faster without losing accuracy.
           </p>
         </div>
         <div class="hero__links">
-          <a class="hero__link hero__link--ghost" href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a class="hero__link hero__link--primary" href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
           <a class="hero__link hero__link--ghost" href="cover-letter.pdf" target="_blank" rel="noopener noreferrer">Cover letter</a>
-          <a class="hero__link hero__link--ghost" href="https://www.linkedin.com/in/ruchita-srivastav-257230ab/" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
+          <a class="hero__link hero__link--ghost" href="https://www.linkedin.com/in/ruchita-srivastav-257230ab/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="hero__link hero__link--ghost" href="https://github.com/Ruchitas123" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
+      </div>
+      <div class="hero__photo">
+        <picture>
+          <source srcset="professional-pic.webp" type="image/webp" />
+          <img src="professional-pic.png" width="260" height="260" alt="Portrait of Ruchita Srivastav" />
+        </picture>
       </div>
     </div>
   </div>
 
   <main class="wrap">
-    <h2 class="section-title">Repositories</h2>
-    <p class="section-sub">
-      Each card opens the project repository on GitHub (code and README).
-    </p>
+    <h2 class="section-title">Focus areas</h2>
+    <p class="section-sub">Tools and practices I use across documentation, product content, and automation.</p>
+    <div class="chips">
+      <span class="chip">EDA / Keysight PathWave ADS</span>
+      <span class="chip">API &amp; SDK docs</span>
+      <span class="chip">UX writing</span>
+      <span class="chip">SEO &amp; content strategy</span>
+      <span class="chip">Docs-as-code</span>
+      <span class="chip">DITA / Markdown / OpenAPI</span>
+      <span class="chip">GitHub Actions</span>
+      <span class="chip">FrameMaker Publishing Server</span>
+      <span class="chip">AI agents &amp; GenAI</span>
+      <span class="chip">Python automation</span>
+    </div>
+
+    <h2 class="section-title">Experience</h2>
+    <p class="section-sub">Employers and scope. Full bullets, dates, and metrics are on the resume.</p>
+    <div class="timeline">
+      <article class="job">
+        <div class="job__top">
+          <h3 class="job__role">Senior Technical Writer</h3>
+          <span class="job__dates">August 2026 – Present</span>
+        </div>
+        <p class="job__company">Keysight Technologies</p>
+        <ul>
+          <li>Own EDA documentation for RF, microwave, and high-speed design workflows used by hardware and simulation engineers.</li>
+          <li>Document circuit simulation, electromagnetic analysis, and electro-thermal workflows across PathWave tools including ADS and SystemVue.</li>
+          <li>Build AI agents for SEO, content rephrasing, and Jira / wiki / Git integration across the documentation lifecycle.</li>
+        </ul>
+      </article>
+      <article class="job">
+        <div class="job__top">
+          <h3 class="job__role">Senior Technical Writer</h3>
+          <span class="job__dates">June 2022 – August 2026</span>
+        </div>
+        <p class="job__company">Adobe Systems</p>
+        <ul>
+          <li>Authored REST API references, SDK guides, tutorials, and UX microcopy for product interfaces, working with engineering, product, and design.</li>
+          <li>Ran content audits across 200+ pages and improved SEO, taxonomy, and findability for global developer audiences.</li>
+          <li>Cut publishing effort by 25% with a docs-as-code pipeline (Git, GitHub PRs, FrameMaker Publishing Server) and GenAI-assisted tooling.</li>
+        </ul>
+      </article>
+      <article class="job">
+        <div class="job__top">
+          <h3 class="job__role">Content Technical Writer</h3>
+          <span class="job__dates">March 2020 – June 2022</span>
+        </div>
+        <p class="job__company">National Informatics Centre</p>
+        <ul>
+          <li>Wrote SRS, architecture, data-flow, and user documentation for national e-governance platforms including Jal Jeevan Mission and Swachh Bharat Mission.</li>
+        </ul>
+      </article>
+      <article class="job">
+        <div class="job__top">
+          <h3 class="job__role">Technical Content Writer</h3>
+          <span class="job__dates">February 2018 – February 2020</span>
+        </div>
+        <p class="job__company">AMC Private Limited</p>
+        <ul>
+          <li>Authored technical programming books and tutorials on Python, Visual Basic .NET, and Android development for print and digital formats.</li>
+        </ul>
+      </article>
+    </div>
+
+    <h2 class="section-title">Selected projects</h2>
+    <p class="section-sub">Public GitHub samples—open a card for the repository and README.</p>
 
     <div class="repos">
       <a class="card" href="https://github.com/Ruchitas123/keyword-analysis" target="_blank" rel="noopener noreferrer">
@@ -362,7 +479,31 @@
           <span class="card__lang">Python · React</span>
         </div>
         <p class="card__desc">
-          Reads competitor pages to surface the keywords that matter, then rewrites your article to align with that insight and improve SEO. CrewAI agents and Azure OpenAI automate the workflow behind a FastAPI service and React UI.
+          Reads competitor pages to surface the keywords that matter, then rewrites your article to align with that insight. CrewAI agents and Azure OpenAI automate the workflow behind a FastAPI service and React UI.
+        </p>
+        <span class="card__link">Open repository →</span>
+      </a>
+
+      <a class="card" href="https://github.com/Ruchitas123/Frontend-MCP" target="_blank" rel="noopener noreferrer">
+        <div class="card__banner" aria-hidden="true"></div>
+        <div class="card__top">
+          <h3 class="card__name">Frontend MCP</h3>
+          <span class="card__lang">JavaScript · MCP</span>
+        </div>
+        <p class="card__desc">
+          Model Context Protocol project for frontend documentation and tooling—an example of connecting AI assistants to structured product and UI context.
+        </p>
+        <span class="card__link">Open repository →</span>
+      </a>
+
+      <a class="card" href="https://github.com/Ruchitas123/seo-backend-MCP" target="_blank" rel="noopener noreferrer">
+        <div class="card__banner" aria-hidden="true"></div>
+        <div class="card__top">
+          <h3 class="card__name">SEO Backend MCP</h3>
+          <span class="card__lang">Python · MCP</span>
+        </div>
+        <p class="card__desc">
+          Backend MCP service for SEO workflows—pairs with the keyword and agent projects as a sample of docs-adjacent automation.
         </p>
         <span class="card__link">Open repository →</span>
       </a>
